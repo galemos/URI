@@ -1,5 +1,6 @@
 package Iniciante;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -19,10 +20,18 @@ Saída
 	caso contrário, você receberá "Presentation Error".  */
 
 public class P1005_Media1 {
+	
 	public static void main(String[] args) {
+		
 		Scanner s = new Scanner(System.in);
 		
-		double a = s.nextDouble();
+		double a = ( s.nextDouble() * 3.5 + s.nextDouble() * 7.5 ) / 11;
+		DecimalFormat d = new DecimalFormat("0.00000");
+		
+		System.out.println("MEDIA = " + d.format(a));		
+		s.close();
 	}
 
 }
+
+//Tempo 0.060

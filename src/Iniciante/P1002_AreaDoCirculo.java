@@ -43,9 +43,11 @@ public class P1002_AreaDoCirculo {
 		double a = s.nextDouble();
 		a = (a*a)*3.14159;
 		DecimalFormat d = new DecimalFormat("0.0000");
-		System.out.println("A=" + d.format(a));
 		
+		System.out.println("A=" + d.format(a));		
 		s.close();
 	}
 
 }
+
+//Tempo 0.088

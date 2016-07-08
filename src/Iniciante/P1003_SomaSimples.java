@@ -16,15 +16,19 @@ Saída:
 	problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você 
 	receberá "Presentation Error". */
 
-public class P1003_SomaSimples {
+public class P1003_SomaSimples {	
+	
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
+		
+		Scanner s = new Scanner(System.in);	
 		
 		int a = s.nextInt();
-		a += s.nextInt();
+		a += s.nextInt();	
 		
 		System.out.println("SOMA = " + a);
 		s.close();
 	}
 
 }
+
+//Tempo 0.080

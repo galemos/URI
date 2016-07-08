@@ -29,3 +29,5 @@ public class P1004_ProdutoSimples {
 	}
 
 }
+
+//Tempo 0.044

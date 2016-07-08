@@ -33,3 +33,5 @@ public class P1001_ExtremamenteBasico {
 	}
 
 }
+
+//Tempo 0.052
