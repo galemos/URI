@@ -1,5 +1,6 @@
 package Iniciante;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -19,12 +20,12 @@ Imprima o total que o funcionário deverá receber, conforme exemplo fornecido.  *
 public class P1009_SalarioComBonus {
 	
 	public static void main(String[] args) {
-		
 		Scanner s = new Scanner(System.in);
+		String nome = s.next();
+		salario = salario + (0.15 * s.nextDouble());
 		
-		String n = s.next();
-		double v = s.nextDouble() + (s.nextDouble() * 0.15);
-		System.out.println(v);
+		DecimalFormat d = new DecimalFormat("0.00");
+		System.out.println("TOTAL = R$ " + d.format(salario));
 		s.close();
 	}
 
