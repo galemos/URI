@@ -1,4 +1,4 @@
-package Iniciante;
+package G1_Iniciante;
 
 import java.util.Scanner;
 

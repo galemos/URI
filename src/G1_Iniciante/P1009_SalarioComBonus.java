@@ -1,4 +1,4 @@
-package Iniciante;
+package G1_Iniciante;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -31,3 +31,5 @@ public class P1009_SalarioComBonus {
 	}
 
 }
+
+//Tempo 0.056
