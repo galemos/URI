@@ -30,14 +30,13 @@ public class P1015_DistanciaEntreDoisPontos {
 		y1 = s.nextFloat();
 		x2 = s.nextFloat();
 		y2 = s.nextFloat();	
-		x1 = x2 - x1;
-		y1 = y2 - y1;
-		x1 *= x1;
-		y1 *= y1;
-		d = Math.sqrt(x1 + y1);
+		d = Math.sqrt(Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2));
 		
 		DecimalFormat df = new DecimalFormat("0.0000");
-		
+		System.out.println(df.format(d));
+		s.close();
 	}
 
 }
+
+//Tempo 0.060
