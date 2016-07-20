@@ -1,6 +1,8 @@
 package G1_Iniciante;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 Problema:
@@ -21,17 +23,21 @@ Saída:
 	sinal de igualdade. */
 
 public class P1001_ExtremamenteBasico {
-	
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		int a, b;
 		
-		int x = s.nextInt()+s.nextInt();
+		a = Integer.parseInt(in.readLine());
+		b = Integer.parseInt(in.readLine());
 		
-		System.out.println("X = " + x);
-		s.close();
+		System.out.printf("X = %d\n", a+b);
+
 	}
 
 }
 
-//Tempo 0.052
+
+//Tempo 0.036
