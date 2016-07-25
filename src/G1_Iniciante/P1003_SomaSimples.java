@@ -1,6 +1,8 @@
 package G1_Iniciante;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
  Problema:
@@ -18,17 +20,16 @@ Saída:
 
 public class P1003_SomaSimples {	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int a = s.nextInt();
-		a += s.nextInt();	
+		int a = Integer.parseInt(br.readLine());
+		a += Integer.parseInt(br.readLine());	
 		
-		System.out.println("SOMA = " + a);
-		s.close();
+		System.out.printf("SOMA = %d\n",a);
 	}
 
 }
 
-//Tempo 0.080
+//Tempo 0.060

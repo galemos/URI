@@ -1,7 +1,8 @@
 package G1_Iniciante;
 
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 Problema:
@@ -21,17 +22,17 @@ Saída
 
 public class P1005_Media1 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		double a = ( s.nextDouble() * 3.5 + s.nextDouble() * 7.5 ) / 11;
-		DecimalFormat d = new DecimalFormat("0.00000");
+		double a,b,m;
+		a = Double.parseDouble(br.readLine());
+		b = Double.parseDouble(br.readLine());
+		m = ( a * 3.5 + b * 7.5 ) / 11;
 		
-		System.out.println("MEDIA = " + d.format(a));		
-		s.close();
+		System.out.printf("MEDIA = %1.5f\n", m);
 	}
-
 }
 
-//Tempo 0.060
+//Tempo 0.040

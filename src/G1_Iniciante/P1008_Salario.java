@@ -1,7 +1,8 @@
 package G1_Iniciante;
 
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 Problema:
@@ -21,19 +22,20 @@ Saída:
 
 public class P1008_Salario {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int q, n = s.nextInt();
-		q = s.nextInt();
-		double h = s.nextDouble() * q;
-		DecimalFormat d = new DecimalFormat("0.00");
+		int n,q;
+		double h,sal;
+		n = Integer.parseInt(br.readLine());
+		q = Integer.parseInt(br.readLine());		
+		h = Double.parseDouble(br.readLine());
+		sal = q*h;
 		
-		System.out.println("NUMBER = " + n + "\nSALARY = U$ " + d.format(h));
-		s.close();
+		
+		System.out.printf("NUMBER = %d\nSALARY = U$ %1.2f\n",n,sal);
 	}
-
 }
 
-//Tempo 0.056
+//Tempo 0.048

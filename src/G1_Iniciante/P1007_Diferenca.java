@@ -1,6 +1,8 @@
 package G1_Iniciante;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 Problema: 
@@ -16,16 +18,19 @@ Saída
 
 public class P1007_Diferenca {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int a = s.nextInt() * s.nextInt() - s.nextInt() * s.nextInt();
+		int a, b, c, d,resp;
+		a = Integer.parseInt(br.readLine());
+		b = Integer.parseInt(br.readLine());
+		c = Integer.parseInt(br.readLine());
+		d = Integer.parseInt(br.readLine());
+		resp = a * b - c * d;
 		
-		System.out.println("DIFERENCA = " + a);
-		s.close();		
+		System.out.printf("DIFERENCA = %d\n", resp);
 	}
-
 }
 
-//Tempo 0.064
+//Tempo 0.040

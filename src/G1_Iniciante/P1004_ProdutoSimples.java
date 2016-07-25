@@ -1,6 +1,8 @@
 package G1_Iniciante;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /* 
  Problema: 
@@ -17,17 +19,15 @@ Saída:
 
 public class P1004_ProdutoSimples {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner s = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int a = s.nextInt();
-		a *= s.nextInt();
-		System.out.println("PROD = " + a);
+		int a = Integer.parseInt(br.readLine());
+		a *= Integer.parseInt(br.readLine());
 		
-		s.close();
+		System.out.printf("PROD = %d\n", a);
 	}
-
 }
 
 //Tempo 0.044

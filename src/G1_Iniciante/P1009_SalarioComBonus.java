@@ -1,7 +1,8 @@
 package G1_Iniciante;
 
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
 Problema:
@@ -19,17 +20,21 @@ Imprima o total que o funcionário deverá receber, conforme exemplo fornecido.  *
 
 public class P1009_SalarioComBonus {
 	
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		String nome = s.next();
-		double salario = s.nextDouble();
-		salario = salario + (0.15 * s.nextDouble());
+	public static void main(String[] args) throws IOException {
 		
-		DecimalFormat d = new DecimalFormat("0.00");
-		System.out.println("TOTAL = R$ " + d.format(salario));
-		s.close();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				
+		String nome;
+		double sal, venda, total;		
+		nome = br.readLine();
+		sal = Double.parseDouble(br.readLine());
+		venda = Double.parseDouble(br.readLine());
+		
+		total = sal + (0.15 * venda);
+
+		System.out.printf("TOTAL = R$ %1.2f\n",total);
 	}
 
 }
 
-//Tempo 0.056
+//Tempo 0.040
